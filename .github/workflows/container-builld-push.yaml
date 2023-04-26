@@ -25,4 +25,4 @@ jobs:
             .
       - name: Push container
         run: |
-           docker push codeforentrepreneurs-session1 --all-tags
+           docker push nithyadevi84/codeforentrepreneurs-session1 --all-tags
