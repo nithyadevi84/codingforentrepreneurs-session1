@@ -23,6 +23,6 @@ jobs:
             -t codeforentrepreneurs-session1:latest \
             -t codeforentrepreneurs-session1:${GITHUB_SHA::7}-${GITHUB_RUN_ID::5} \
             .
-       - name: Push container
-         run: |
+      - name: Push container
+        run: |
            docker push codeforentrepreneurs-session1 --all-tags
