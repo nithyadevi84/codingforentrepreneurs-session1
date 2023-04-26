@@ -21,9 +21,9 @@ jobs:
       - name: Build web container image
         run: |
           docker build -f Dockerfile \
-            -t jmitchel3/tf-python:latest \
-            -t jmitchel3/f-python:${GITHUB_SHA::7}-${GITHUB_RUN_ID::5} \
+            -t codeforentrepreneurs-session1:latest \
+            -t codeforentrepreneurs-session1:${GITHUB_SHA::7}-${GITHUB_RUN_ID::5} \
             .
        - name: Push container
          run: |
-           docker push jmitchel3/tf-python --all-tags
+           docker push codeforentrepreneurs-session1 --all-tags
