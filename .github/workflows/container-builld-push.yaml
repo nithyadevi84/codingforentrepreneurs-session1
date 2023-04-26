@@ -20,8 +20,8 @@ jobs:
       - name: Build web container image
         run: |
           docker build -f Dockerfile \
-            -t codeforentrepreneurs-session1:latest \
-            -t codeforentrepreneurs-session1:${GITHUB_SHA::7}-${GITHUB_RUN_ID::5} \
+            -t nithyadevi84/codeforentrepreneurs-session1:latest \
+            -t nithyadevi84/codeforentrepreneurs-session1:${GITHUB_SHA::7}-${GITHUB_RUN_ID::5} \
             .
       - name: Push container
         run: |
