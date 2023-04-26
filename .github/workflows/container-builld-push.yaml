@@ -1,5 +1,4 @@
 name: Build Docker Container & Push to Docker Hub
-
 on:
   workflow_dispatch:
 
